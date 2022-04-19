@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Form sở thích</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+    </div>
+    <table id="allTable">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="color: blue;">Họ và tên</td>
+            <td><input type="text" size="35px"></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">Email</td>
+            <td><input type="email" size="35px"></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">Sở thích</td>
+            <td>
+                <table id="hobby">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" name="" id="sport">Thể thao</td>
+                        <td> <input type="checkbox" name="" id="sport">Âm nhạc</td>
+                        <td><input type="checkbox" name="" id="">Đọc sách</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id="">Lướt web</td>
+                        <td><input type="checkbox" name="" id="">Chơi game</td>
+                        <td><input type="checkbox" name="" id="">Điện ảnh</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id="">Du lịch</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button id="submit">Gửi thông tin</button>
+                <button id="retry">Nhập lại</button>
+            </td>
+        </tr>
+    </table>
+    <style>
+        table {
+            border: black;
+        }
+
+        .header {
+            background-color: #fd5000;
+            color: white;
+            text-align: center;
+            max-width: 30%;
+        }
+
+        #allTable>tr,
+        td {
+            padding: 3px;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        #hobby>tr,
+        td {
+            padding: 3px;
+            text-align: left;
+        }
+    </style>
+</body>
+
+</html>
